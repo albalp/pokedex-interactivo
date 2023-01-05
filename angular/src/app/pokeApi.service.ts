@@ -19,7 +19,7 @@ export class PokeApiService {
   }
 
   getPokemonDetails(id:string){
-    return this.http.get<any>(`${BASEURL}/id`)
+    return this.http.get<any>(`${BASEURL}/${id}`)
   }
 
 }

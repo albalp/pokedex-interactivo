@@ -2,12 +2,13 @@
 <mat-divider></mat-divider>
 
 <mat-grid-list cols="3">
-  <mat-grid-tile *ngFor="let poke of pokes"> 
+  <mat-grid-tile *ngFor="let poke of pokes; index as i"> 
+
     <mat-card class="example-card" >
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{ poke.name }}</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        <mat-card-title> {{ poke.name }}</mat-card-title>
+        <mat-card-subtitle>{{ poke }}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
         <p>
