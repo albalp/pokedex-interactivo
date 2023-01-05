@@ -8,17 +8,19 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
-
-
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { CardsComponent } from './Cards/cards.component'
+import { CardsComponent } from './Cards/cards.component';
+import { HeaderComponent } from './header/header.component'
+import { PokeApiService } from './pokeApi.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardsComponent
+    CardsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +30,10 @@ import { CardsComponent } from './Cards/cards.component'
     MatGridListModule,
     MatInputModule,
     MatDividerModule,
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
