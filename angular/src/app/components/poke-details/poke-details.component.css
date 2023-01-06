@@ -1,0 +1,24 @@
+.example-card {
+    width: 400px;
+  }
+  
+  .example-header-image {
+    background-size: cover;
+  }
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+  }
+  .example-header-image {
+    width: 100px;
+    height: 100px;
+  }
+  
