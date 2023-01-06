@@ -6,6 +6,7 @@ export interface pokemonDetails{
 }
 
 interface Stats {
+stat: any
     name: string,
     base_stat: number
 }

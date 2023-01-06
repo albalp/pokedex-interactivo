@@ -5,6 +5,9 @@
     </div>
     <mat-card-title>{{pokemon.name}}</mat-card-title>
     <mat-card-subtitle>{{pokemon.id}}</mat-card-subtitle>
+    <mat-card-content *ngFor="let st of pokemon.stats; index as i; "> 
+      <b>{{pokemon.stats[i].stat.name}}:</b>{{ pokemon.stats[i].base_stat }}
+    </mat-card-content>
   </mat-card-header>
   <mat-card-content>
     <p></p>
