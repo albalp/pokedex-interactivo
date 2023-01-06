@@ -12,15 +12,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { CardsComponent } from './Cards/cards.component';
-import { HeaderComponent } from './header/header.component'
+import { CardsComponent } from './components/Cards/cards.component';
+import { HeaderComponent } from './components/header/header.component'
 import { PokeApiService } from './pokeApi.service';
+import { PokeDetailsComponent } from './components/poke-details/poke-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsComponent,
-    HeaderComponent
+    HeaderComponent,
+    PokeDetailsComponent
   ],
   imports: [
     BrowserModule,
